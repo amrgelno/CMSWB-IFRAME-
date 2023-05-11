@@ -1,0 +1,39 @@
+put it
+<?php
+
+include("connect.php");
+
+
+class purorder  extends  condb{        
+  
+
+public function sql(){
+	
+	?>
+ 
+find                          Replace
+mysqli_query($connect,  (to)  $this->connectF()->query(
+
+ $column ['  / $row['            (to)   $column ->    /   $row -> 
+
+
+ ']?               (to)       ?
+
+
+ array  / assoc (to)   OBJECT
+
+assoc  (to)  object
+
+
+
+put it
+
+ <?php	
+}
+}
+$use= new purorder();
+$use->connectF();
+$use->sql();
+?>   
+  
+$_GET['MainM_ID']

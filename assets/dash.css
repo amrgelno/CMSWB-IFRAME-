@@ -1,0 +1,67 @@
+
+
+input.Mainbt1 {
+    background-color: antiquewhite;
+}
+
+
+input.update {
+    background: blue;
+    color: white;
+}
+
+
+input.select {
+    margin-top: 15px;
+    margin-left: 20px;
+    background-color: aliceblue;
+}
+
+input.delete {
+    margin-top: 15px;
+    background: red;
+    color: white;
+}
+
+input.insert {
+    margin-top: 10px;
+    background-color: beige;
+}
+
+input.edit {
+    margin-top: 10px;
+    background:orange;
+}
+
+input.send {
+    margin-top: 17px;
+    background:orange;
+}
+
+
+input.send2 {
+    margin-top: -18px;
+    margin-bottom: 20px;
+    background: orange;
+}
+
+input[type="file"] {
+    margin-top: 12px;
+}
+
+.EDIT_TOPIC{
+    
+ background: orange;   
+    
+}
+}
+
+
+tr.trc {
+    color: brown;
+    background-color: aliceblue;
+}
+
+table {
+    border: 3px solid #beabab8f;
+}

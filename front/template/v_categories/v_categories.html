@@ -1,0 +1,24 @@
+<article class="v_categories"  v-for="(data,i) in vcat"   :key='i'    style="opacity:1;">
+
+<div  v-for="(data,i) in  vcat"   :key='i'    style="opacity:1;">
+
+    <div class="headline col-sm-10 col-md-8  col-lg-7 " v-if='data.catheadline' v-html='data.catheadline'> 
+      </div>
+               <div CLASS="V_FRAME" >          
+          <div class="Vido1">
+
+<video  :src="data.VIDEO" class="front"  controls="controls" width="50%" height="240"  tabindex="0"    loop="loop"  tabindex="0" />  
+
+<source  :src="VIDEO/data.VIDEO"  type="video/mp4"></video>
+
+<div class="v_title" v-html='data.cat_title'><!--<a :href="cat_VIDEO_ID"  id='linker' ></a>-->
+
+		</div>
+		</div>
+                </div>
+
+</article>
+
+
+
+</main></template></v-section>

@@ -1,0 +1,33 @@
+<Template>
+<article class="slider col-lg-12 col-xs-12 col-md-12 col-sm-12" v-if="embed_slider"> 
+  <div class="sliderimg col-lg-12 col-xs-12 col-md-12 col-sm-12"><!--str slider img -->
+  <div id="theCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Define how many slides to put in the carousel -->
+   
+    <!-- Define the text to place over the image -->
+   
+    <div class="carousel-inner">
+      <div class="item active" >
+      <div class ="slide1"><img :src="Minslide"  loading='lazy' class="Image"  /></div>
+      <div class="carousel-caption"><Font size='5px' v-html='Mintitle'>    </Font> </div>     
+      </div>
+           
+      <div class="item"  v-for="(data,i) in sliderB"   :key='i'>
+      <div class="slide2"><img :src="data.largeslide2" loading='fast' class="Image"  /></div>
+      <div class="carousel-caption"><Font size='5px' v-html='data.largetitle2'>    </Font> </div> 
+       </div>     
+     
+        
+  
+  
+    </div>
+    </div> 
+    <!-- Set the actions to take when the arrows are clicked -->
+    <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"> </span>
+    </a>
+    <a class="right carousel-control" href="#theCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div></article>
+</Template>

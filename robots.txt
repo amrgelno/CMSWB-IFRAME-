@@ -1,0 +1,25 @@
+User-agent: *
+
+Disallow: /folder_name/
+
+Disallow: link
+
+Sitemap:http://www.domain.com/sitemap.php
+
+
+---------------------------------------------------------
+on httaccess file on host
+
+RewriteEngine On 
+
+RewriteRule ^site_map.xml?/?$ site_map.php
+
+
+
+-------------
+
+httaccess webserver
+# HTID:16714467: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16714467:
+

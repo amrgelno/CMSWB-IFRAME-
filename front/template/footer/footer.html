@@ -1,0 +1,72 @@
+
+<!-- <div class="aos-item aos-init "       data-aos="fade-up" data-aos-duration="1500" 
+data-aos-delay="500" > welcome </div> -->
+    
+<a href="#carouselExampleCaptions" class="fa fa-angle-up" id="scroll-top"></a>
+
+<footer class="footer"  :style='{display:display}'>
+
+
+    <div class="aos-item  info"       data-aos="fade-up" data-aos-duration="1500" 
+    data-aos-delay="500">
+
+<div class="einfo"  >
+
+    <div class="soicon"><img src="ame.png" class="socicon"></a></div>
+    <div class="email">{{Email}}</div>
+    </div>
+
+<div class="einfo">
+    <div class="soicon"><img src="phone-icon-line-telephone-symbol-vector-21084486.png" class="socicon"></a></div>
+    <div class="mobile"><a :href="Telehref">{{Tele_Number}}   </a> </div>
+    </div>
+
+<div class="einfo">
+    <div class="soicon"><img src="Address.png" class="socicon" ></a></div>
+    <div class="Address"> {{street}}    </div>
+    </div>
+
+</div>
+
+<UL id="menu" >
+
+<li class="Link_M" v-for='(data,i) in  nav' :key='i'>
+    <a :href='data.Link_M' v-html='data.sub1menu'> </a></li> 
+
+</UL>
+
+
+<div class="socialposition" >
+
+    <div class="icon" v-for='(data,i) in  socialMedia' :key='i'>
+        
+    <a :href="data.links">
+         
+    <img :src="data.ICON" class='soc_icon'/>
+    
+    </a>
+    
+    </div>
+    
+    </div>
+    
+
+
+<div class="copyright">
+<br />&nbsp;monarch-vaction_2021 </div> 
+
+
+        <div class="logo">
+     
+        
+	<img :src="logo"  class="logo"/>
+	
+        </div>   
+    </div>
+
+
+
+
+</footer>
+
+

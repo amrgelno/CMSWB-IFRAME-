@@ -1,0 +1,35 @@
+<!-- <script type="text/javascript">
+
+        
+    function sendData() {	
+
+       event.preventDefault();
+
+       var pgid ='<?php echo $pg_id ?>';
+
+        var slider ='<?php echo $sliderModel[0]  ?>';
+
+       
+
+      $.ajax({
+
+        
+        
+    type:'POST',	
+    
+    url:"controllerview.php",	
+
+    data:{
+
+        
+       pg_id:pgid, 
+    
+       slider:slider, 
+    
+    },
+     
+  
+  });		
+         }
+
+    </script>   -->

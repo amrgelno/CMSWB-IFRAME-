@@ -1,0 +1,60 @@
+<article class="slider col-lg-12 col-xs-12 col-md-12 col-sm-12"  v-if="embed_slider" style=" top:15px; position: relative;
+min-height: 1px;"> 
+  <div class="sliderimg col-lg-12 col-xs-12 col-md-12 col-sm-12"><!--str slider img -->
+    <div class="carousel-innercol-lg-12  w3-section w3-content-center" style="display: flex;">  
+      <!-- <div class="item active" >
+        <div class ="slide1 w3-content"><img  style="position: absolute;
+          display: block;"  :src="Minslide"  loading='lazy' class="Image mySlides w3-animate-left "  /></div>
+         <div class="carousel-caption"><Font size='5px' v-html='Mintitle'>    </Font> </div>   
+        </div>    -->
+        <Slideshow class="item  slide2">
+          
+          <slideimg class=" mySlides w3-animate-zoom  " v-for="(data,i) in sliderB"   :key='i' >
+         
+ <img  :src="data.largeslide2" loading='lazy' class="Image"    style="position: absolute; "/>
+          
+          <carousel-caption  class=" carousel-caption">
+            <Font size='5px' v-html='data.largetitle2'>    </Font> </carousel-caption> 
+
+        
+        
+        </slideimg>
+  
+     
+
+          
+         </Slideshow>         
+  </div>
+</div>
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" 
+  style="width:100%" >
+  
+    <span  v-for="(data,slide) in sliderB"   :key='slide' 
+    class="w3-badge demo w3-border w3-transparent w3-hover-white" :onclick="data.slide_id"></span>
+
+    
+  <div class=" w3-left w3-hover-text-khaki" style='border-radius: 100px; border:2px solid rgb(197, 172, 31); font-size:20px;'  onclick="plusDivs(-1)">  <strong>  <b> &nbsp; &#10094;= &nbsp; </b> </strong>   </div>
+    <div class=" w3-right w3-hover-text-khaki" style='border-radius: 100px; border:2px solid rgb(197, 172, 31); font-size:20px;'  onclick="plusDivs(1)"> <strong>  <b> &nbsp;  =&#10095; &nbsp; </b> </strong>   </div> <P>&nbsp; &nbsp;</P>
+
+   
+
+
+     <!-- <a class="left carousel-control" onclick="plusDivs(-1)">
+      <span class="glyphicon glyphicon-chevron-left"> </span>
+      </a>
+      <a class="right carousel-control" onclick="plusDivs(1)">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      </a> 
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
+    
+  </div>
+</div>
+</div>
+</article>
+
+<!-- <link rel="stylesheet" href="w3.css">
+
+
+<script  src="w3js.js"> </script> -->

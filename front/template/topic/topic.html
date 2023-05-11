@@ -1,0 +1,63 @@
+<Article class="topic" style='opacity:5;' >
+
+<div class='topic-FRAME'
+ v-for="(data,index) in Topic"  :key="index"   v-if='data.Topic_content' >
+
+ <topicframe  v-if= "data.styletype =='defaultstyle' ">  
+
+<div class="img">
+
+<img  :src="data.Topic_IMG" class="img"/>
+
+</div>
+
+<div class="text">
+
+<!-- <a :href="data.Topic_ID">[{{index}}]-{{data.Topic_subject}}</a> -->
+
+ <a :href="data.Topic_ID"><h2 style=' font-size:25px; text-align:left;'> {{data.Topic_subject}}
+    <br/><span class="star" v-if='data.Rates' style="text-align: center;">
+   <span style='color:rgb(0, 136, 255);' > Rates:-  </span><span> 0.{{data.Rates}} </span> <b> <i aria-hidden="true" class="fa fa-star"></i>  </b>
+
+<!-- <i aria-hidden="true" class="fa fa-star-o"></i> -->
+</span>
+ </h2> <span style='color:rgb(0, 136, 255);' v-html='data.content2'> </span>
+</a>
+<br/>
+<!--{{data.Topic_subject}}-->
+<span v-html='data.Topic_content' style='color:black;'>  </span>
+</div>	
+</topicframe>
+
+
+<AccordinPanel  v-else-if= "data.styletype=='Accordin Panel' " >  
+
+   <div id="Accordion1" class="Accordion"  style='margin-top: -50px;'>
+      <div class="AccordionPanel">
+        <div class="AccordionPanelTab" ><button class='Accordine-bt' @click='data.show = !data.show'  ><span ><img :src="data.Topic_IMG" class="soc_icon"> </span><span v-html='data.Topic_subject'> </span></button></div>
+        <div class="AccordionPanelContent"  v-show='data.show'  v-html='data.Topic_content'> </div>
+      </div>
+</AccordinPanel>
+</div>
+
+
+</Article>
+
+
+<script>
+
+const links = document.querySelectorAll('.AccordionPanelTab');
+    
+    if (links.length) {
+      links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          links.forEach((link) => {
+              link.classList.remove('active');
+          });
+        //   e.preventDefault();
+          link.classList.add('active');
+        });
+      });
+    }
+    
+</script>

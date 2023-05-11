@@ -1,0 +1,69 @@
+
+<div class='scrollstatic'>   </div>
+
+<Article class="col-lg-12 paragraph content"
+  v-for="(data,i) in Paragraph"  :key="i"  
+  v-if='data.paragraph'
+  
+  >
+
+    <paragraph  
+    
+    
+    v-if="data.paragraphstyle == 'defaultparagraph'  ">  
+
+
+<span v-html='data.paragraph'>  </span>
+
+
+</paragraph>
+
+
+<paragraph  
+class='jumbotron col-md-12 row g-0  shadow-sm h-md-250  
+col-lg-12'  
+v-if='data.paragraphstyle == "paragraphstyle2" ' style='background:unset; border:2px dashed rgb(231, 231, 231); '>
+
+           <div class="col-md-4" style='border:1px dotted rgb(255, 255, 255);'>
+            <div class='flipcard'>   
+            <div class="frontcard" style='z-index:2; '> 
+              <img :src="companYlogo" alt="" srcset="" class='img-responsive'>        
+            </div>
+            <div class="backcard " style='z-index:1; display:flex; flex-wrap: nowrap; flex-direction: column;'>       
+              <span>LOCATION ON MAP</span>     
+            </div>  
+          </div>           
+           </div>
+
+
+        <div class="col-md-6" style='text-align: center; padding:10px;' v-html='data.paragraph'></div>
+
+        <div class="col-md-2" > 
+       <webstatic style='background:wheat'  
+         v-for="(data,i) in static"   :key='i'
+          v-if='data.static_title' style='padding-right:10px;' >  <div class='col-md-12' style='border:2px dashed rgb(255, 255, 255); margin-bottom:20px;'>
+          
+            <img src="data.static_img" alt="" srcset=""  width='30px' height='20px'> 
+     
+               <strong  v-html='data.static_title'>   </strong> &nbsp
+     
+               <span class="counter" style='color:#418bca;' :data-target='data.static_Num'> 0 </span>
+
+             <!-- <span class='counterdiv' ><b class='counter' loading='lazy' >  0  </b>+</span>  
+             <span class='targetvaldiv' style='display:none; '>   <b class='targetval' > {{data.static_Num}}  </b> +</span> -->
+               </div>
+              </webstatic>
+<br/>
+      
+
+   </div>
+      
+</paragraph>
+
+</Article>
+
+
+
+<div class="clear"> </div>
+
+

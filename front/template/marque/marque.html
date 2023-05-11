@@ -1,0 +1,8 @@
+ <div class="marque" v-for="(data,i) in Marquee"  :key="i" >
+<div class="news" > top news </div>
+<marquee   direction="up" behavior="scroll"   bgcolor="#CCCCCC"    scrollamount="1" font-size="25px"  width= "100%"  height="20px">
+<div align="center" v-html='data.News'>
+
+</div>     			                 
+</marquee>	    
+</div>

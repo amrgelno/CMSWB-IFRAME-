@@ -1,0 +1,56 @@
+
+# HTID:16714467: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:16714467:
+#router system
+
+RewriteEngine On 
+
+RewriteRule ^site_map.xml?/?$ site_map.php
+
+RewriteRule ^VUE/fetchbox&topic.js?/?$ VUE/fetchbox&topic.php
+
+RewriteRule ^Router.js?/?$ Router.php
+
+RewriteRule ^vueapps.js?/?$ vueapps.php
+
+RewriteRule ^Blog?/?$ index.php
+
+RewriteRule ^WEBVIEW?/?$ WEBVIEW.PHP
+
+RewriteRule ^template?/?$ front/template.php
+
+RewriteRule ^controllerView.js?/?$ controllerView.php
+
+RewriteRule ^nav?/?$  front/template/nav/nav.html
+
+RewriteRule ^marque?/?$  front/template/marque/marque.html
+
+RewriteRule ^paragraph?/?$  front/template/paragraph/paragraph.html
+
+RewriteRule ^loadingscreen?/?$  front/template/loadingscreen/loadiingscreen.html
+
+RewriteRule ^footer?/?$  front/template/footer/footer.html
+
+RewriteRule ^cover?/?$  front/template/cover/cover.html
+
+RewriteRule ^categories?/?$  front/template/categories/categories.html
+
+RewriteRule ^static_box?/?$  front/template/static_box/static_box.html
+
+RewriteRule ^topic?/?$  front/template/topic/topic.html
+
+RewriteRule ^slider/?$  front/template/slider/slider.html
+
+RewriteRule ^v_categories/?$  front/template/v_categories/v_categories.html
+
+RewriteRule ^headtag?/?$  front/template/headtag/headtag.html
+
+RewriteRule ^templateview?/?$ front/templateVIEW.PHP
+
+RewriteRule ^IMPORTAPP.css?/?$ IMPORTAPP.html
+
+RewriteRule ^../css/lg.css?/$ ../css/lg.php
+RewriteRule ^../css/md.css?/$ ../css/md.php
+RewriteRule ^../css/sm.css?/$ ../css/md.php
+RewriteRule ^../css/xs.css?/$ ../css/md.php

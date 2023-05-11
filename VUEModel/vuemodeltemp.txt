@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+
+
+  <title>  welcome vue lesson 3</title>
+
+  <body> 
+    
+  <!-- START::__SCRIPT__LINKS -->
+  <script src="JS/vue.js"></script>
+
+  <div id="app"> <p> hellow{{ name.length < 5 ? ' Mr ' + name:  name }} </p>
+  
+  <P>   Your Age is:{{ age }} years </P>
+  
+  <P>   your first skill is {{ skills[0] }}  </P>
+   
+  <p> {{ sayYourname() }}  </p>
+  
+  </div>
+ 
+
+<script>
+
+    const { createApp } = Vue
+  
+    createApp({
+		
+      data() {
+		  
+        return {
+			
+name: 'amr',
+age:29,
+skills:['HTML','CSS','bootstrap','JS','Jquery','php','mysql','laravel']
+		
+		}
+      },
+	  	  
+	  methods:{
+
+sayYourname: function(){	
+
+return this.name;
+
+		}		
+		              }
+					  
+	  
+    }).mount('#app')
+  </script>
+    <!-- END::____SCRIPT__LINKS -->
+
+  </body>
+</html>
