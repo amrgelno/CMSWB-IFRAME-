@@ -1,12 +1,12 @@
 IFRAME   (CMS )  
 
-MADE WITH TECHNO  
-Native PHP WITH  VUE.JS   (MVVM DESIGN PATTERN)
-Ajax
-HTML5
-CSS (media Query + sass)
-UI FRAME WORK
- bootstrap
+<BR/>MADE WITH TECHNO  
+<BR/>Native PHP WITH  VUE.JS   (MVVM DESIGN PATTERN)<BR/>
+<BR/>Ajax
+<BR/>HTML5
+<BR/>CSS (media Query + sass)
+<BR/>UI FRAME WORK
+ <BR/>bootstrap
 
 
 
